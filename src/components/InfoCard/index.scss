@@ -1,0 +1,222 @@
+@font-face {
+  font-family: Kanit;
+  src: url("../../assets/fonts/Kanit-Regular.ttf");
+}
+
+@font-face {
+  font-family: KanitSemiBold;
+  src: url("../../assets/fonts/Kanit-SemiBold.ttf");
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-family: Kanit;
+  background: rgb(39, 38, 44) none repeat scroll 0% 0%;
+  min-height: 200px;
+  border-radius: 8px;
+  justify-content: center;
+  margin: 15px;
+  max-width: 500px;
+
+  .wallet-connect-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    .wallet-connect-button {
+      background-color: rgb(31, 199, 212);
+      color: white;
+      border: none;
+      font-family: KanitSemiBold;
+      font-size: 16px;
+      border-radius: 14px;
+      padding: 10px 15px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: rgb(23, 156, 166);
+      }
+    }
+  }
+
+  .profile-container {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    color: white;
+
+    .profile-content {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+
+      .profile-avatar {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      .profile-info {
+        display: flex;
+        flex-direction: column;
+        margin-left: 15px;
+
+        .profile-name {
+          font-size: 24px;
+        }
+
+        .profile-address {
+          font-size: 14px;
+        }
+      }
+
+      .profile-details-container {
+        display: flex;
+      }
+    }
+  }
+
+  .signing-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px 15px 15px;
+    width: 80%;
+    background-color: rgb(237, 75, 158);
+    border-radius: 6px;
+    padding: 10px;
+
+    .signature-container {
+      display: flex;
+
+      .signature {
+        max-width: 80%;
+        margin-right: 10px;
+      }
+
+      .signature-copy {
+        display: flex;
+        align-items: center;
+        padding: 4px 6px;
+        width: 40px;
+        height: 25px;
+        background-color: rgb(31, 199, 212);
+        color: white;
+        font-family: Kanit;
+        border: none;
+        border-radius: 10px;
+        font-size: 12px;
+        cursor: pointer;
+        &:hover {
+          background-color: rgb(23, 156, 166);
+        }
+      }
+    }
+
+    .signing-message {
+      font-family: Kanit;
+      outline: none;
+      max-width: 200px;
+      margin-bottom: 10px;
+    }
+
+    .signing-message-button {
+      background-color: rgb(31, 199, 212);
+      color: white;
+      text-align: center;
+      border-radius: 14px;
+      padding: 5px 10px;
+      cursor: pointer;
+      width: 130px;
+      margin-top: 10px;
+
+      &:hover {
+        background-color: rgb(23, 156, 166);
+      }
+    }
+  }
+
+  .verifying-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px 15px 15px;
+    width: 80%;
+    background-color: rgb(154, 106, 255);
+    border-radius: 6px;
+    padding: 10px;
+
+    .verify-inputs {
+      display: flex;
+      flex-direction: column;
+
+      .verifying-message {
+        font-family: Kanit;
+        outline: none;
+        max-width: 200px;
+        margin-bottom: 10px;
+      }
+    }
+
+    .verifying-message-button {
+      background-color: rgb(31, 199, 212);
+      color: white;
+      text-align: center;
+      border-radius: 14px;
+      padding: 5px 10px;
+      cursor: pointer;
+      width: 130px;
+      margin-top: 10px;
+
+      &:hover {
+        background-color: rgb(23, 156, 166);
+      }
+    }
+  }
+
+  .wallet-disconnect-button {
+    font-family: Kanit;
+    background-color: rgb(184, 173, 210);
+    color: black;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    width: 150px;
+    margin-top: 10px;
+    border: none;
+    margin: 0 0 15px 15px;
+
+    &:hover {
+      background-color: rgb(114, 107, 130);
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    margin: 5px;
+
+    .profile-container {
+      .profile-content {
+        .profile-avatar {
+          width: 60px;
+          height: 60px;
+        }
+
+        .profile-info {
+          .profile-name {
+            font-size: 20px;
+          }
+
+          .profile-address {
+            font-size: 15px;
+            display: inline-block;
+            word-break: break-word;
+          }
+        }
+      }
+    }
+  }
+}
