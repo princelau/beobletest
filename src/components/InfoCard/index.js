@@ -187,9 +187,9 @@ const InfoCard = () => {
     }
     const signatureLength = signature.length;
     return (
-      signature.substring(0, 10) +
+      signature.substring(0, 12) +
       "..." +
-      signature.substring(signatureLength - 10)
+      signature.substring(signatureLength - 12)
     );
   };
 

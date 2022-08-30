@@ -19,3 +19,5 @@ You are also able to sign any message, and verify it after that to receive your 
 Comes complete with error alerts if something goes wrong and code comments.
 
 Reusable card created with max width of 600px and min width of 375px (mobile) with a breakpoint of 576px.
+
+> I am using node version v17.9.1, npm version 8.11.0. But I believe it should work with other versions.
